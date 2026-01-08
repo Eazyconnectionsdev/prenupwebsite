@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import logo from "@/images/logo.png"
 import email from "@/images/email.png"
 import location from "@/images/location.png"

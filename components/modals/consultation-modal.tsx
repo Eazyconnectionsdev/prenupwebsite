@@ -3,13 +3,10 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
-  DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 import { HiPhone } from "react-icons/hi";
 import { IoLogoWhatsapp } from "react-icons/io";

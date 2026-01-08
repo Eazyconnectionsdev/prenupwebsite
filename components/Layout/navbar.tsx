@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import ConsultationModal from "../modals/consultation-modal";
 import { Button } from "../ui/button";
 
 const Navbar = () => {
-  const [scroll, setScroll] = useState(false);
+  const [scroll] = useState(false);
 
   const menuItems = [
     {

@@ -1,29 +1,34 @@
 "use client";
+
 import { useState } from "react";
 
+type ContactFormState = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 export default function ContactForm() {
-
-    const [isMounted, setIsMounted] = useState(false);
-
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<ContactFormState>({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted:", form);
   };
-
-  if(!isMounted) return null
 
   return (
     <form

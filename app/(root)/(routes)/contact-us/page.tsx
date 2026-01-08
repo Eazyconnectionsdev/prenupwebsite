@@ -1,7 +1,6 @@
 "use client"
 
 import ContactForm from '@/components/contactForm';
-import React, { useEffect, useState } from 'react'
 
 
 const svg = (
@@ -208,15 +207,7 @@ const svg = (
 
 const ContactUsPage = () => {
 
-  // const [isMounted, setIsMounted] = useState(false);
-
-  // useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
-
-  // if(!isMounted) {
-  //   return null;
-  // }
+ 
 
   return (
          <section>

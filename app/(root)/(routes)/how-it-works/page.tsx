@@ -1,4 +1,3 @@
-import React from 'react'
 import HowItWorks from '@/components/Home/howItWorks'
 
 const HowItWorksPage = () => {

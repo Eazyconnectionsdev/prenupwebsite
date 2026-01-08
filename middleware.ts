@@ -1,3 +1,3 @@
-export default function middleware(req: Request) {
+export default function middleware() {
   return;
 }

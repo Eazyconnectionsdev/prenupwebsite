@@ -6,26 +6,6 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
 
-  {
-    rules: {
-      // -----------------------------
-      // 1. Allow 'any' type
-      // -----------------------------
-      "@typescript-eslint/no-explicit-any": "off",
-
-      // -----------------------------
-      // 2. Disable unused variables/params warnings for functions
-      // -----------------------------
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "off", // turn off all unused variable errors
-        {
-          argsIgnorePattern: "^_", // ignore function parameters starting with _
-        },
-      ],
-    },
-  },
-
   // -----------------------------
   // Ignore build folders and env files
   // -----------------------------
