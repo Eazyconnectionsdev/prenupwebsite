@@ -7,6 +7,7 @@ import {
   ImageDivider,
   Agreements,
   Pricing,
+  ComparisonTable,
   Team,
   Testimonials,
   FAQ,
@@ -27,6 +28,7 @@ export default function Home() {
         <ImageDivider />
         <Agreements />
         <Pricing />
+        <ComparisonTable />
         <Team />
         <Testimonials />
         <FAQ />
@@ -36,5 +38,3 @@ export default function Home() {
     </SmoothScroll>
   );
 }
-
-
