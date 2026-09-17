@@ -1,8 +1,8 @@
 export default function Agreements() {
   return (
-    <section id="agreements" className="py-28 lg:py-40 bg-ivory">
+    <section id="agreements" className="py-14 lg:py-18 bg-ivory">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="rv mb-20 max-w-[520px]">
+        <div className="rv mb-10 max-w-[520px]">
           <p className="label-sm text-rose font-bold mb-5">Agreements</p>
           <h2 className="display text-[clamp(32px,4.5vw,56px)] text-midnight leading-[1.1]">
             Three agreements. One platform. Your choice.
@@ -12,7 +12,7 @@ export default function Agreements() {
         {/* Uneven: large left, stacked right */}
         <div className="grid lg:grid-cols-12 gap-px bg-pearl rounded-2xl overflow-hidden border border-pearl">
           {/* Prenuptial: large panel */}
-          <div className="rv lg:col-span-7 bg-ivory p-10 lg:p-16 flex flex-col justify-between min-h-[420px] group cursor-pointer transition-colors duration-500 hover:bg-rose-mist">
+          <div className="rv lg:col-span-7 bg-ivory p-8 lg:p-12 flex flex-col justify-between min-h-[340px] group cursor-pointer transition-colors duration-500 hover:bg-rose-mist">
             <div>
               <p className="label-sm text-rose font-bold mb-6">Most Popular</p>
               <h3 className="display text-[clamp(28px,3.5vw,44px)] text-midnight mb-4">

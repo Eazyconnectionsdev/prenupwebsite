@@ -54,7 +54,7 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="py-20 lg:py-24 bg-ivory border-b border-pearl">
+    <section className="py-10 lg:py-14 bg-ivory border-b border-pearl">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-pearl">
           <div className="rv text-center lg:px-8">

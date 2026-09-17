@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-36 lg:py-48 overflow-hidden">
+    <section className="relative py-18 lg:py-24 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=80"
@@ -18,7 +18,7 @@ export default function FinalCTA() {
           Your marriage deserves a{" "}
           <span className="display-italic text-rose-glow">clear start</span>.
         </h2>
-        <p className="rv text-white/90 text-[17px] mb-12 max-w-md mx-auto font-normal">
+        <p className="rv text-white/90 text-[17px] mb-8 max-w-md mx-auto font-normal">
           Fixed £999. Two independent firms. Done in days. Start in under five minutes.
         </p>
         <div className="rv">

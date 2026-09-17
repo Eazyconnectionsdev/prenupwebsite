@@ -12,9 +12,9 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-28 lg:py-40 bg-ivory">
+    <section id="faq" className="py-14 lg:py-18 bg-ivory">
       <div className="max-w-[900px] mx-auto px-6 lg:px-16">
-        <div className="rv mb-16">
+        <div className="rv mb-10">
           <p className="label-sm text-rose font-semibold mb-5">FAQ</p>
           <h2 className="display text-[clamp(32px,4.5vw,52px)] text-midnight">
             Common questions.
@@ -25,7 +25,7 @@ export default function FAQ() {
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className={`faq-row border-t border-pearl py-7 ${
+              className={`faq-row border-t border-pearl py-5 ${
                 idx === faqs.length - 1 ? "border-b" : ""
               }`}
             >
