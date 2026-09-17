@@ -28,8 +28,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lets Prenup Portal",
-  description: "A Prenup Management System",
+  title: "LetsPrenup — Premier Nuptial Agreements",
+  description: "Bespoke prenuptial and postnuptial agreements crafted by leading family law specialists.",
 };
 
 export default function RootLayout({
@@ -51,7 +51,7 @@ export default function RootLayout({
       )}
     >
       <body cz-shortcut-listen="true" className="min-h-full flex flex-col">
-          {children}
+        {children}
       </body>
     </html>
   );
