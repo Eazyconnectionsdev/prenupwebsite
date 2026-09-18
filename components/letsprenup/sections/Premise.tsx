@@ -1,6 +1,6 @@
 export default function Premise() {
   return (
-    <section className="py-28 lg:py-40 bg-ivory">
+    <section className="py-14 lg:py-18 bg-ivory">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left Eyebrow Column */}

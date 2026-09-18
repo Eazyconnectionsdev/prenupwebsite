@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-midnight text-white border-t border-midnight-light pt-20 pb-12">
+    <footer className="bg-midnight text-white border-t border-midnight-light pt-12 pb-8">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="grid lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        <div className="grid lg:grid-cols-12 gap-12 pb-8 border-b border-white/10">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center gap-2 mb-5">
               <svg className="w-5 h-5 text-rose-glow" viewBox="0 0 28 28" fill="none">

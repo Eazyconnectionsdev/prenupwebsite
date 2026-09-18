@@ -39,7 +39,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-midnight text-white py-28 lg:py-40 select-none">
+    <section className="bg-midnight text-white py-14 lg:py-18 select-none">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
         <div className="rv mb-6 flex items-center justify-between">
           <p className="label-sm text-rose-glow font-semibold tracking-widest uppercase">
@@ -77,7 +77,7 @@ export default function Testimonials() {
           >
             {testimonials.map((q, i) => (
               <div key={i} className="w-full flex-shrink-0">
-                <div className="grid lg:grid-cols-12 gap-8 items-end py-12">
+                <div className="grid lg:grid-cols-12 gap-8 items-end py-6 lg:py-8">
                   <div className="lg:col-span-9">
                     <blockquote className="display-italic text-[clamp(28px,4.5vw,56px)] text-white leading-[1.18] transition-opacity duration-300">
                       "{q.quote.replace(/^["']|["']$/g, "")}"

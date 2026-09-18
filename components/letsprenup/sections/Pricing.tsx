@@ -2,9 +2,9 @@ import ComparisonTable from "./ComparisonTable";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-28 lg:py-40 bg-pearl">
+    <section id="pricing" className="py-14 lg:py-18 bg-pearl">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left: Complete Couple Pricing Card in v12 styling */}
           <div className="lg:col-span-5 lg:sticky lg:top-28 rv">
             <div className="relative bg-midnight text-white rounded-3xl p-8 lg:p-10 border border-rose/30 shadow-2xl overflow-hidden">

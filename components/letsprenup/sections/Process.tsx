@@ -23,9 +23,9 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="bg-midnight text-white py-28 lg:py-40">
+    <section id="process" className="bg-midnight text-white py-14 lg:py-18">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="rv grid lg:grid-cols-12 gap-8 mb-24">
+        <div className="rv grid lg:grid-cols-12 gap-8 mb-12">
           <div className="lg:col-span-6">
             <p className="label-sm text-rose-glow font-semibold mb-5">Process</p>
             <h2 className="display text-[clamp(34px,4.8vw,60px)] text-white">
@@ -45,7 +45,7 @@ export default function Process() {
           {steps.map((step, idx) => (
             <div
               key={step.num}
-              className={`rv grid lg:grid-cols-12 gap-8 border-t border-white/15 py-16 lg:py-20 group ${
+              className={`rv grid lg:grid-cols-12 gap-8 border-t border-white/15 py-8 lg:py-10 group ${
                 idx === steps.length - 1 ? "border-b border-b-white/15" : ""
               }`}
             >

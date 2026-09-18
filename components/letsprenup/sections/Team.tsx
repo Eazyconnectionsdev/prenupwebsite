@@ -1,8 +1,8 @@
 export default function Team() {
   return (
-    <section className="py-28 lg:py-40 bg-ivory overflow-hidden">
+    <section className="py-14 lg:py-18 bg-ivory overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="rv mb-16 grid lg:grid-cols-12 gap-8">
+        <div className="rv mb-10 grid lg:grid-cols-12 gap-8">
           <div className="lg:col-span-6">
             <p className="label-sm text-rose font-semibold mb-5">Your Team</p>
             <h2 className="display text-[clamp(32px,4.5vw,56px)] text-midnight leading-[1.1]">
@@ -12,7 +12,7 @@ export default function Team() {
         </div>
 
         <div className="rv lg:flex lg:gap-px lg:bg-pearl">
-          <div className="bg-ivory p-10 lg:p-14 lg:flex-1 border-b lg:border-b-0 border-pearl">
+          <div className="bg-ivory p-8 lg:p-10 lg:flex-1 border-b lg:border-b-0 border-pearl">
             <p className="label-sm text-slate font-semibold mb-5">Operations</p>
             <h3 className="display text-[28px] text-midnight mb-4">Case Manager</h3>
             <p className="text-slate text-[15px] lg:text-[16px] leading-relaxed mb-8 font-normal">
