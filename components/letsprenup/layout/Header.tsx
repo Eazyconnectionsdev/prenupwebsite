@@ -119,7 +119,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/register"
+              href="https://prenup-weld.vercel.app/register"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[12px] font-semibold tracking-wider uppercase transition-all duration-300 bg-[#8B3A4A] text-white hover:bg-[#6E2D3B] shadow-sm hover:shadow-md cursor-pointer group"
             >
               <span>Sign Up</span>
@@ -205,7 +205,7 @@ export default function Header() {
             Log In
           </Link>
           <Link
-            href="/register"
+            href="https://prenup-weld.vercel.app/register"
             onClick={() => setDrawerOpen(false)}
             className="w-full bg-[#8B3A4A] text-white py-3 rounded-xl text-center text-sm font-semibold tracking-wider uppercase shadow-md hover:bg-[#6E2D3B] transition-all"
           >
