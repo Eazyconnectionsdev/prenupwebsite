@@ -39,9 +39,9 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-midnight text-white py-14 lg:py-18 select-none">
+    <section className="bg-midnight text-white py-16 lg:py-24 select-none">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="rv mb-6 flex items-center justify-between">
+        <div className="rv mb-8 flex items-center justify-between">
           <p className="label-sm text-rose-glow font-semibold tracking-widest uppercase">
             What Couples Say
           </p>
@@ -79,7 +79,7 @@ export default function Testimonials() {
               <div key={i} className="w-full flex-shrink-0">
                 <div className="grid lg:grid-cols-12 gap-8 items-end py-6 lg:py-8">
                   <div className="lg:col-span-9">
-                    <blockquote className="display-italic text-[clamp(28px,4.5vw,56px)] text-white leading-[1.18] transition-opacity duration-300">
+                    <blockquote className="display-italic text-[clamp(26px,4vw,52px)] text-white leading-[1.25] pt-1 transition-opacity duration-300">
                       "{q.quote.replace(/^["']|["']$/g, "")}"
                     </blockquote>
                   </div>

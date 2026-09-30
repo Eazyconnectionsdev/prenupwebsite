@@ -62,43 +62,43 @@ export default function Header() {
           </Link>
 
           {/* Center Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-9">
             <a
               href="#process"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Process
             </a>
             <a
               href="#agreements"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Agreements
             </a>
             <a
               href="#pricing"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Pricing
             </a>
             <a
               href="#faq"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               FAQ

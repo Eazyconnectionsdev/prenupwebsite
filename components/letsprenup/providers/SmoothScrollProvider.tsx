@@ -92,6 +92,21 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       });
     }
 
+    // Anchor link smooth scroll with exact top flush alignment
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a[href^="#"]');
+      if (!target) return;
+      const href = target.getAttribute("href");
+      if (!href || href === "#") return;
+      const el = document.querySelector<HTMLElement>(href);
+      if (el) {
+        e.preventDefault();
+        const topPos = el.getBoundingClientRect().top + window.scrollY;
+        lenis.scrollTo(topPos, { duration: 1.0 });
+      }
+    };
+    document.addEventListener("click", handleAnchorClick);
+
     const refreshScroll = () => {
       ScrollTrigger.refresh();
       lenis.resize();
@@ -104,6 +119,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
 
     return () => {
       clearTimeout(timer);
+      document.removeEventListener("click", handleAnchorClick);
       window.removeEventListener("resize", refreshScroll);
       window.removeEventListener("load", refreshScroll);
       gsap.ticker.remove(tickerCb);

@@ -2,18 +2,19 @@ import { Check } from "lucide-react";
 
 export default function ComparisonTable() {
   return (
-    <div className="rv mt-20">
-      <div className="max-w-2xl mb-10">
-        <p className="label-sm text-rose font-semibold uppercase tracking-widest mb-3">
-          Comparison
-        </p>
-        <h3 className="display text-[clamp(32px,4vw,48px)] text-midnight mb-4">
-          How We Compare
-        </h3>
-        <p className="text-slate text-[17px] font-medium leading-relaxed">
-          See how LetsPrenup stacks up against traditional law firms and budget providers.
-        </p>
-      </div>
+    <section className="py-16 lg:py-24 bg-pearl border-t border-linen/60">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
+        <div className="rv max-w-2xl mb-10">
+          <p className="label-sm text-rose font-semibold uppercase tracking-widest mb-3">
+            Comparison
+          </p>
+          <h3 className="display text-[clamp(32px,4vw,48px)] text-midnight mb-4">
+            How We Compare
+          </h3>
+          <p className="text-slate text-[17px] font-medium leading-relaxed">
+            See how LetsPrenup stacks up against traditional law firms and budget providers.
+          </p>
+        </div>
 
       <div className="overflow-x-auto rounded-2xl border border-linen bg-ivory shadow-sm">
         <table className="w-full text-left text-[15px] border-collapse min-w-[700px]">
@@ -77,6 +78,7 @@ export default function ComparisonTable() {
           </tbody>
         </table>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }

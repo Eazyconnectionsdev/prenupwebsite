@@ -1,6 +1,6 @@
 export default function Premise() {
   return (
-    <section className="py-14 lg:py-18 bg-ivory">
+    <section className="py-16 lg:py-24 bg-ivory">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left Eyebrow Column */}
@@ -14,7 +14,7 @@ export default function Premise() {
 
           {/* Right Main Content Column */}
           <div className="lg:col-span-7 lg:col-start-6">
-            <h2 className="rv display text-[clamp(32px,4.5vw,56px)] text-midnight mb-10 leading-[1.1]">
+            <h2 className="rv display text-[clamp(32px,4.5vw,54px)] text-midnight mb-10 leading-[1.18] pt-1">
               A prenup isn't about distrust. It's two people choosing to be{" "}
               <span className="display-italic text-rose">deliberately honest</span> before they say yes.
             </h2>

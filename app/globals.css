@@ -7,26 +7,10 @@
 }
 
 html {
-  font-size: 85%; /* Calibrated scale - makes sections fit cleanly within standard screen heights */
+  font-size: 100%;
 }
 
-@media (min-width: 1600px) {
-  html {
-    font-size: 92%;
-  }
-}
 
-@media (max-width: 1024px) {
-  html {
-    font-size: 85%;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 90%;
-  }
-}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -202,17 +186,19 @@ html {
 
 .display {
   font-family: 'Instrument Serif', Georgia, serif !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.025em !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
   font-weight: 400 !important;
+  padding-top: 4px;
 }
 
 .display-italic {
   font-family: 'Instrument Serif', Georgia, serif !important;
   font-style: italic !important;
-  line-height: 1.05 !important;
+  line-height: 1.25 !important;
   letter-spacing: -0.015em !important;
   font-weight: 400 !important;
+  padding-top: 4px;
 }
 
 .label-sm {
@@ -222,6 +208,8 @@ html {
   letter-spacing: 0.18em !important;
   text-transform: uppercase !important;
   display: inline-block !important;
+  line-height: 1.5 !important;
+  padding-top: 2px;
 }
 
 /* ── Hero ── */

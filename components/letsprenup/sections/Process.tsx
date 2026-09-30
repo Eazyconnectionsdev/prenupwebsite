@@ -23,44 +23,49 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="bg-midnight text-white py-14 lg:py-18">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="rv grid lg:grid-cols-12 gap-8 mb-12">
-          <div className="lg:col-span-6">
-            <p className="label-sm text-rose-glow font-semibold mb-5">Process</p>
-            <h2 className="display text-[clamp(34px,4.8vw,60px)] text-white">
-              Four conversations.
-              <br />
-              One signed agreement.
+    <section
+      id="process"
+      className="bg-midnight text-white min-h-screen lg:h-screen flex flex-col justify-center relative overflow-hidden"
+    >
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-16 w-full pt-16 pb-4 lg:pt-20 lg:pb-6 flex flex-col justify-center">
+        {/* Header */}
+        <div className="rv grid lg:grid-cols-12 gap-4 lg:gap-8 mb-6 lg:mb-8 items-end">
+          <div className="lg:col-span-7">
+            <p className="label-sm text-rose-glow font-bold mb-4 lg:mb-5 !text-[15px] lg:!text-[16px] tracking-[0.22em]">
+              Process
+            </p>
+            <h2 className="display text-[clamp(26px,2.9vw,40px)] text-white leading-[1.18] pt-1">
+              Four Simple Steps & One signed agreement
             </h2>
           </div>
-          <div className="lg:col-span-5 lg:col-start-8 flex items-end">
-            <p className="text-white/90 text-[18px] lg:text-[20px] font-medium leading-relaxed">
-              No paperwork. No office visits. Each step happens online, on your schedule.
+          <div className="lg:col-span-5 flex items-end">
+            <p className="text-white/90 text-[17px] lg:text-[20px] font-medium leading-relaxed">
+              Completely Online, No office visits
             </p>
           </div>
         </div>
 
+        {/* 4 Steps */}
         <div className="space-y-0">
           {steps.map((step, idx) => (
             <div
               key={step.num}
-              className={`rv grid lg:grid-cols-12 gap-8 border-t border-white/15 py-8 lg:py-10 group ${
+              className={`rv grid lg:grid-cols-12 gap-4 lg:gap-8 items-center border-t border-white/15 py-4 lg:py-5 group transition-colors duration-300 hover:bg-white/[0.02] ${
                 idx === steps.length - 1 ? "border-b border-b-white/15" : ""
               }`}
             >
               <div className="lg:col-span-1">
-                <span className="display text-[48px] lg:text-[64px] text-rose-glow font-normal leading-none">
+                <span className="display text-[30px] lg:text-[42px] text-rose-glow font-normal leading-none">
                   {step.num}
                 </span>
               </div>
               <div className="lg:col-span-4">
-                <h3 className="text-[22px] lg:text-[26px] font-semibold text-white mb-2.5">
+                <h3 className="text-[17px] lg:text-[19px] font-semibold text-white">
                   {step.title}
                 </h3>
               </div>
-              <div className="lg:col-span-5 lg:col-start-7">
-                <p className="text-white/90 text-[16px] lg:text-[18px] leading-relaxed font-normal">
+              <div className="lg:col-span-7">
+                <p className="text-white/85 text-[13.5px] lg:text-[14.5px] leading-relaxed font-normal">
                   {step.desc}
                 </p>
               </div>
