@@ -60,7 +60,7 @@ export default function Pricing() {
 
               {/* CTA Button */}
               <a
-                href="#pricing"
+                href="https://prenup-weld.vercel.app/login"
                 className="btn-fill bg-rose hover:bg-rose-deep text-white w-full py-4 rounded-full text-[13px] font-bold tracking-wider uppercase text-center inline-flex items-center justify-center gap-2 shadow-lg transition-all duration-300"
               >
                 Start Your Agreement — £499 →

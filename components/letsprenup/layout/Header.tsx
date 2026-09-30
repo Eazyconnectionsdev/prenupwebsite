@@ -108,7 +108,7 @@ export default function Header() {
           {/* Right Action Buttons: Log In & Sign Up */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="/login"
+              href="https://prenup-weld.vercel.app/login"
               className={`text-[13px] font-semibold tracking-wide transition-all duration-200 px-3.5 py-2 rounded-lg cursor-pointer ${
                 scrolled
                   ? "text-midnight hover:text-rose hover:bg-black/5"
@@ -198,7 +198,7 @@ export default function Header() {
         {/* Mobile Auth Actions */}
         <div className="mt-auto flex flex-col gap-3 pt-6 border-t border-gray-100">
           <Link
-            href="/login"
+            href="https://prenup-weld.vercel.app/login"
             onClick={() => setDrawerOpen(false)}
             className="w-full py-2.5 border border-gray-200 text-[#0D1B2A] font-semibold rounded-xl text-sm hover:bg-gray-50 transition-all text-center"
           >
