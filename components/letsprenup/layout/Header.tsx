@@ -36,7 +36,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 transition-colors duration-300 group">
             <svg
-              className={`w-[28px] h-[28px] transition-colors duration-300 ${
+              className={`w-[29px] h-[29px] transition-colors duration-300 ${
                 scrolled ? "text-rose" : "text-rose-glow"
               }`}
               viewBox="0 0 28 28"
@@ -53,7 +53,7 @@ export default function Header() {
               />
             </svg>
             <span
-              className={`text-[14px] font-bold tracking-[0.16em] uppercase transition-colors duration-300 ${
+              className={`text-[16px] lg:text-[17px] font-bold tracking-[0.18em] uppercase transition-colors duration-300 ${
                 scrolled ? "text-midnight" : "text-white"
               }`}
             >
