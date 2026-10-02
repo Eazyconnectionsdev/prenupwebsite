@@ -5,7 +5,7 @@ export default function Premise() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left Eyebrow Column */}
           <div className="lg:col-span-4 rv">
-            <p className="label-sm text-rose font-semibold mb-4">Why LetsPrenup</p>
+            <p className="label-sm text-rose font-semibold mb-4">Why Let&apos;sPrenup</p>
             <div className="w-16 h-[2px] bg-rose mb-8"></div>
             <p className="text-slate text-[16px] lg:text-[17px] font-medium leading-relaxed">
               We rebuilt the prenup process from scratch because the old way was broken: too slow, too expensive, too adversarial.

@@ -28,7 +28,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LetsPrenup — Premier Nuptial Agreements",
+  title: "Let'sPrenup — Premier Nuptial Agreements",
   description: "Bespoke prenuptial and postnuptial agreements crafted by leading family law specialists.",
 };
 

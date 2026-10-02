@@ -12,11 +12,17 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-14 lg:py-18 bg-ivory">
-      <div className="max-w-[900px] mx-auto px-6 lg:px-16">
-        <div className="rv mb-10">
-          <p className="label-sm text-rose font-semibold mb-5">FAQ</p>
-          <h2 className="display text-[clamp(32px,4.5vw,52px)] text-midnight">
+    <section
+      id="faq"
+      className="bg-ivory min-h-screen lg:h-screen flex flex-col justify-center relative overflow-hidden"
+    >
+      <div className="max-w-[960px] mx-auto px-6 lg:px-16 w-full pt-14 pb-4 lg:pt-16 lg:pb-6 flex flex-col justify-center">
+        {/* Header matching other sections */}
+        <div className="rv mb-8 lg:mb-10">
+          <p className="label-sm text-rose font-bold mb-3 !text-[15px] lg:!text-[16px] tracking-[0.22em] uppercase">
+            FAQ
+          </p>
+          <h2 className="display text-[clamp(26px,3.1vw,40px)] text-midnight leading-[1.18] pt-1">
             Common questions.
           </h2>
         </div>
@@ -25,7 +31,7 @@ export default function FAQ() {
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className={`faq-row border-t border-pearl py-5 ${
+              className={`faq-row border-t border-pearl py-4 lg:py-4.5 ${
                 idx === faqs.length - 1 ? "border-b" : ""
               }`}
             >
@@ -33,7 +39,7 @@ export default function FAQ() {
                 onClick={() => toggle(idx)}
                 className="flex items-start justify-between gap-6 cursor-pointer group"
               >
-                <h3 className="text-[18px] lg:text-[20px] font-semibold text-midnight group-hover:text-rose transition-colors">
+                <h3 className="text-[17px] lg:text-[19px] font-semibold text-midnight group-hover:text-rose transition-colors">
                   {faq.q}
                 </h3>
                 <span className="text-rose flex-shrink-0 mt-1">
@@ -46,7 +52,7 @@ export default function FAQ() {
               </div>
               {openIdx === idx && (
                 <div className="mt-3 pt-1">
-                  <p className="text-slate text-[15px] lg:text-[16px] leading-relaxed font-normal">
+                  <p className="text-slate text-[14.5px] lg:text-[15.5px] leading-relaxed font-normal">
                     {faq.a}
                   </p>
                 </div>

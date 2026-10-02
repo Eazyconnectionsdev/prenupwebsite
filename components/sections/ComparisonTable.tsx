@@ -11,7 +11,7 @@ export default function ComparisonTable() {
           How We Compare
         </h3>
         <p className="text-slate text-[17px] font-medium leading-relaxed">
-          See how LetsPrenup stacks up against traditional law firms and budget providers.
+          See how Let&apos;sPrenup stacks up against traditional law firms and budget providers.
         </p>
       </div>
 
@@ -23,7 +23,7 @@ export default function ComparisonTable() {
               <th className="py-5 px-6 font-semibold">Traditional Firms</th>
               <th className="py-5 px-6 font-semibold">Fixed Fee Providers</th>
               <th className="py-5 px-6 font-semibold bg-midnight text-white tracking-widest">
-                LetsPrenup
+                Let&apos;sPrenup
               </th>
             </tr>
           </thead>

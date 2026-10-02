@@ -36,7 +36,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 transition-colors duration-300 group">
             <svg
-              className={`w-[28px] h-[28px] transition-colors duration-300 ${
+              className={`w-[29px] h-[29px] transition-colors duration-300 ${
                 scrolled ? "text-rose" : "text-rose-glow"
               }`}
               viewBox="0 0 28 28"
@@ -53,52 +53,52 @@ export default function Header() {
               />
             </svg>
             <span
-              className={`text-[14px] font-bold tracking-[0.16em] uppercase transition-colors duration-300 ${
+              className={`text-[16px] lg:text-[17px] font-bold tracking-[0.18em] uppercase transition-colors duration-300 ${
                 scrolled ? "text-midnight" : "text-white"
               }`}
             >
-              LetsPrenup
+              Let&apos;sPrenup
             </span>
           </Link>
 
           {/* Center Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-9">
             <a
               href="#process"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Process
             </a>
             <a
               href="#agreements"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Agreements
             </a>
             <a
               href="#pricing"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               Pricing
             </a>
             <a
               href="#faq"
-              className={`text-[13px] font-semibold transition-colors duration-300 ${
+              className={`text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-300 ${
                 scrolled
-                  ? "text-midnight/80 hover:text-rose"
-                  : "text-white/90 hover:text-rose-glow"
+                  ? "text-midnight/85 hover:text-rose"
+                  : "text-white hover:text-rose-glow"
               }`}
             >
               FAQ
@@ -153,7 +153,7 @@ export default function Header() {
               <circle cx="16.5" cy="14" r="6.5" stroke="currentColor" strokeWidth="1.4" opacity="0.6" />
             </svg>
             <span className="text-[13px] font-bold tracking-wider uppercase text-[#0D1B2A]">
-              LetsPrenup
+              Let&apos;sPrenup
             </span>
           </div>
           <button
