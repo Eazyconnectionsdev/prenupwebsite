@@ -57,7 +57,7 @@ export default function Header() {
                 scrolled ? "text-midnight" : "text-white"
               }`}
             >
-              LetsPrenup
+              Let&apos;sPrenup
             </span>
           </Link>
 
@@ -153,7 +153,7 @@ export default function Header() {
               <circle cx="16.5" cy="14" r="6.5" stroke="currentColor" strokeWidth="1.4" opacity="0.6" />
             </svg>
             <span className="text-[13px] font-bold tracking-wider uppercase text-[#0D1B2A]">
-              LetsPrenup
+              Let&apos;sPrenup
             </span>
           </div>
           <button

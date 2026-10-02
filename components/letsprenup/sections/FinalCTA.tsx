@@ -57,7 +57,7 @@ export default function FinalCTA() {
                   />
                 </svg>
                 <span className="text-[13px] font-bold tracking-[0.16em] uppercase text-white">
-                  LetsPrenup
+                  Let&apos;sPrenup
                 </span>
               </Link>
               <p className="text-white/80 text-[13px] leading-relaxed max-w-xs font-normal">
@@ -155,7 +155,7 @@ export default function FinalCTA() {
 
           {/* Copyright Row */}
           <div className="pt-3 pb-1 flex flex-col md:flex-row justify-between items-center gap-2 text-[11.5px] text-white/70 font-medium">
-            <p>&copy; 2026 LetsPrenup Ltd. All rights reserved.</p>
+            <p>&copy; 2026 Let&apos;sPrenup Ltd. All rights reserved.</p>
             <p>
               Independent legal advice provided by panel solicitors regulated by the SRA & BSB.
             </p>

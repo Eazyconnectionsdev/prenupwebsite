@@ -15,57 +15,63 @@ export default function Team() {
           </h2>
         </div>
 
-        {/* 3 Cards matching Agreements layout and font sizing */}
-        <div className="rv lg:flex lg:gap-px bg-pearl rounded-2xl overflow-hidden border border-pearl shadow-sm">
-          {/* Card 1: Operations / Case Manager */}
-          <div className="bg-ivory p-6 lg:p-8 lg:flex-1 border-b lg:border-b-0 border-pearl flex flex-col justify-between group transition-colors duration-300 hover:bg-rose-mist/50">
+        {/* 3 Distinct Modern Cards matching Agreements section UI */}
+        <div className="rv grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7">
+          {/* Card 1: Operations / Case Manager (Soft Pink with Dark Midnight Blue Hover) */}
+          <div className="relative bg-rose-mist/60 text-midnight p-7 lg:p-8 rounded-2xl border border-rose/20 shadow-sm flex flex-col justify-between group transition-all duration-300 hover:bg-midnight hover:shadow-2xl hover:-translate-y-1 hover:border-rose/40 overflow-hidden cursor-pointer">
             <div>
-              <p className="label-sm text-rose font-bold mb-4">Operations</p>
-              <h3 className="display text-[24px] lg:text-[28px] text-midnight mb-3">
+              <p className="label-sm text-rose group-hover:text-rose-glow transition-colors duration-300 font-bold mb-4 uppercase tracking-widest text-[11px]">
+                Operations
+              </p>
+              <h3 className="display text-[24px] lg:text-[28px] text-midnight group-hover:text-white transition-colors duration-300 mb-3">
                 Case Manager
               </h3>
-              <p className="text-slate text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
+              <p className="text-slate group-hover:text-white/85 transition-colors duration-300 text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
                 Your single point of contact. Keeps the timeline on track, verifies disclosures, coordinates between both law firms.
               </p>
             </div>
-            <div className="border-t border-pearl pt-4 mt-auto">
-              <p className="text-slate text-[13px] font-semibold">
+            <div className="border-t border-rose/15 group-hover:border-white/15 transition-colors duration-300 pt-4 mt-auto">
+              <p className="text-slate group-hover:text-rose-glow transition-colors duration-300 text-[13px] font-semibold tracking-wide">
                 Assigned at signup
               </p>
             </div>
           </div>
 
-          {/* Card 2: Independent Solicitor / Your Lawyer */}
-          <div className="bg-ivory p-6 lg:p-8 lg:flex-1 border-b lg:border-b-0 border-pearl flex flex-col justify-between group transition-colors duration-300 hover:bg-rose-mist/50">
+          {/* Card 2: Independent Solicitor / Your Lawyer (Soft Pink with Dark Midnight Blue Hover) */}
+          <div className="relative bg-rose-mist/60 text-midnight p-7 lg:p-8 rounded-2xl border border-rose/20 shadow-sm flex flex-col justify-between group transition-all duration-300 hover:bg-midnight hover:shadow-2xl hover:-translate-y-1 hover:border-rose/40 overflow-hidden cursor-pointer">
             <div>
-              <p className="label-sm text-rose font-bold mb-4">Independent Solicitor</p>
-              <h3 className="display text-[24px] lg:text-[28px] text-midnight mb-3">
+              <p className="label-sm text-rose group-hover:text-rose-glow transition-colors duration-300 font-bold mb-4 uppercase tracking-widest text-[11px]">
+                Independent Solicitor
+              </p>
+              <h3 className="display text-[24px] lg:text-[28px] text-midnight group-hover:text-white transition-colors duration-300 mb-3">
                 Your Lawyer
               </h3>
-              <p className="text-slate text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
+              <p className="text-slate group-hover:text-white/85 transition-colors duration-300 text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
                 Reviews the agreement exclusively from your perspective. Protects your interests. Gives you independent, confidential advice.
               </p>
             </div>
-            <div className="border-t border-pearl pt-4 mt-auto">
-              <p className="text-slate text-[13px] font-semibold">
+            <div className="border-t border-rose/15 group-hover:border-white/15 transition-colors duration-300 pt-4 mt-auto">
+              <p className="text-slate group-hover:text-rose-glow transition-colors duration-300 text-[13px] font-semibold tracking-wide">
                 SRA or BSB regulated
               </p>
             </div>
           </div>
 
-          {/* Card 3: Independent Solicitor / Partner's Lawyer */}
-          <div className="bg-ivory p-6 lg:p-8 lg:flex-1 flex flex-col justify-between group transition-colors duration-300 hover:bg-rose-mist/50">
+          {/* Card 3: Independent Solicitor / Partner's Lawyer (Soft Pink with Dark Midnight Blue Hover) */}
+          <div className="relative bg-rose-mist/60 text-midnight p-7 lg:p-8 rounded-2xl border border-rose/20 shadow-sm flex flex-col justify-between group transition-all duration-300 hover:bg-midnight hover:shadow-2xl hover:-translate-y-1 hover:border-rose/40 overflow-hidden cursor-pointer">
             <div>
-              <p className="label-sm text-rose font-bold mb-4">Independent Solicitor</p>
-              <h3 className="display text-[24px] lg:text-[28px] text-midnight mb-3">
+              <p className="label-sm text-slate group-hover:text-rose-glow transition-colors duration-300 font-semibold mb-4 uppercase tracking-widest text-[11px]">
+                Independent Solicitor
+              </p>
+              <h3 className="display text-[24px] lg:text-[28px] text-midnight group-hover:text-white transition-colors duration-300 mb-3">
                 Partner's Lawyer
               </h3>
-              <p className="text-slate text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
+              <p className="text-slate group-hover:text-white/85 transition-colors duration-300 text-[14.5px] lg:text-[15.5px] leading-relaxed mb-6 font-normal">
                 From a completely different firm. Protects their interests independently. This separation is what courts need to see.
               </p>
             </div>
-            <div className="border-t border-pearl pt-4 mt-auto">
-              <p className="text-slate text-[13px] font-semibold">
+            <div className="border-t border-rose/15 group-hover:border-white/15 transition-colors duration-300 pt-4 mt-auto">
+              <p className="text-slate group-hover:text-rose-glow transition-colors duration-300 text-[13px] font-semibold tracking-wide">
                 Separate firm guaranteed
               </p>
             </div>

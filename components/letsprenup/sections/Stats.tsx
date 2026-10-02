@@ -54,58 +54,58 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="py-10 lg:py-14 bg-ivory border-b border-pearl">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-pearl">
-          <div className="rv text-center lg:px-8">
+    <div className="py-2 bg-ivory">
+      <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 lg:divide-x lg:divide-pearl">
+          <div className="rv text-center lg:px-6">
             <div
-              className="stat-num text-[clamp(40px,5vw,64px)] text-midnight leading-none font-normal"
+              className="stat-num text-[clamp(28px,3.2vw,44px)] text-midnight leading-none font-normal"
               data-count="999"
               data-prefix="£"
             >
               £0
             </div>
-            <p className="text-mist text-[13px] font-medium mt-2">
+            <p className="text-mist text-[11.5px] lg:text-[13px] font-medium mt-1">
               Fixed total fee
             </p>
           </div>
-          <div className="rv text-center lg:px-8">
+          <div className="rv text-center lg:px-6">
             <div
-              className="stat-num text-[clamp(40px,5vw,64px)] text-midnight leading-none font-normal"
+              className="stat-num text-[clamp(28px,3.2vw,44px)] text-midnight leading-none font-normal"
               data-count="9"
               data-suffix=" days"
             >
               0 days
             </div>
-            <p className="text-mist text-[13px] font-medium mt-2">
+            <p className="text-mist text-[11.5px] lg:text-[13px] font-medium mt-1">
               Average completion
             </p>
           </div>
-          <div className="rv text-center lg:px-8">
+          <div className="rv text-center lg:px-6">
             <div
-              className="stat-num text-[clamp(40px,5vw,64px)] text-midnight leading-none font-normal"
+              className="stat-num text-[clamp(28px,3.2vw,44px)] text-midnight leading-none font-normal"
               data-count="2"
             >
               0
             </div>
-            <p className="text-mist text-[13px] font-medium mt-2">
+            <p className="text-mist text-[11.5px] lg:text-[13px] font-medium mt-1">
               Independent law firms
             </p>
           </div>
-          <div className="rv text-center lg:px-8">
+          <div className="rv text-center lg:px-6">
             <div
-              className="stat-num text-[clamp(40px,5vw,64px)] text-midnight leading-none font-normal"
+              className="stat-num text-[clamp(28px,3.2vw,44px)] text-midnight leading-none font-normal"
               data-count="100"
               data-suffix="%"
             >
               0%
             </div>
-            <p className="text-mist text-[13px] font-medium mt-2">
+            <p className="text-mist text-[11.5px] lg:text-[13px] font-medium mt-1">
               Online process
             </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

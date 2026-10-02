@@ -93,7 +93,7 @@ export default function Pricing() {
                     Platform, drafting & case management
                   </p>
                   <p className="text-slate text-[13px] lg:text-[14px] font-medium mt-0.5">
-                    Paid to LetsPrenup at signup
+                    Paid to Let&apos;sPrenup at signup
                   </p>
                 </div>
                 <span className="display text-[24px] lg:text-[28px] text-midnight">£499</span>

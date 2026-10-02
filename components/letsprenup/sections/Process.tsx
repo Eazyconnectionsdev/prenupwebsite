@@ -2,7 +2,7 @@ export default function Process() {
   const steps = [
     {
       num: "1",
-      title: "Choose & Invite",
+      title: "Select Service & Invite",
       desc: "Pick your agreement type. Send your partner a secure invite. The entire setup takes under three minutes. No payment, no commitment yet.",
     },
     {

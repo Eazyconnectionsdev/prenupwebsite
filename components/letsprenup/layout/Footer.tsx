@@ -19,7 +19,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="text-[13px] font-bold tracking-[0.16em] uppercase text-white">
-                LetsPrenup
+                Let&apos;sPrenup
               </span>
             </Link>
             <p className="text-white/90 text-[14px] leading-relaxed max-w-xs font-normal">
@@ -113,7 +113,7 @@ export default function Footer() {
         </div>
 
         <div className="py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-white/80 font-medium">
-          <p>&copy; 2026 LetsPrenup Ltd. All rights reserved.</p>
+          <p>&copy; 2026 Let&apos;sPrenup Ltd. All rights reserved.</p>
           <p>
             Independent legal advice provided by panel solicitors regulated by the SRA & BSB.
           </p>
