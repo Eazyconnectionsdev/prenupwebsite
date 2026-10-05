@@ -7,6 +7,7 @@ import {
   ImageDivider,
   Agreements,
   Pricing,
+  ComparisonTable,
   Team,
   Testimonials,
   FAQ,
@@ -21,8 +22,8 @@ export default function Home() {
       <main className="min-h-screen">
         <Header />
         <Hero />
-        <Stats />
         <Premise />
+        <ComparisonTable />
         <Process />
         <ImageDivider />
         <Agreements />
@@ -31,7 +32,6 @@ export default function Home() {
         <Testimonials />
         <FAQ />
         <FinalCTA />
-        <Footer />
       </main>
     </SmoothScroll>
   );

@@ -65,7 +65,7 @@ export default function Header() {
                 scrolled ? "text-midnight" : "text-white"
               }`}
             >
-              LetsPrenup
+              Let&apos;sPrenup
             </span>
           </Link>
 

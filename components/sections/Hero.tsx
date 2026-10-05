@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="display-italic text-rose-glow">clear start</span>
           </h1>
 
-          <p className="rv text-mist text-[17px] lg:text-[18px] font-light leading-[1.75] max-w-[460px] mb-12">
+          <p className="rv text-white text-[17px] lg:text-[18px] font-normal leading-[1.75] max-w-[460px] mb-12">
             Fixed £999 for both partners. Two independent law firms. Dedicated case manager. Completed in days.
           </p>
 
@@ -28,7 +28,7 @@ export default function Hero() {
               Begin Your Agreement
               <ArrowRight className="w-4 h-4" />
             </a>
-            <span className="text-mist/70 text-[13px]">Takes under 5 minutes</span>
+            <span className="text-white text-[13px] font-medium">Takes under 5 minutes</span>
           </div>
 
           {/* Social Proof Badges */}

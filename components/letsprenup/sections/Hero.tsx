@@ -3,19 +3,19 @@ import { ArrowRight, Check } from "lucide-react";
 export default function Hero() {
   return (
     <section className="hero-gradient min-h-screen relative overflow-hidden flex flex-col justify-between">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-16 w-full flex-grow grid lg:grid-cols-12 items-center gap-8 pt-20 pb-16">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-16 w-full flex-grow grid lg:grid-cols-12 items-center gap-8 pt-28 lg:pt-32 pb-20">
         {/* Left Content Column */}
-        <div className="lg:col-span-7 pt-12 pb-8 lg:pt-0 lg:pb-0 relative z-10">
+        <div className="lg:col-span-7 pt-4 pb-8 lg:pt-0 lg:pb-0 relative z-10">
           <p className="rv label-sm text-rose-glow mb-4">
             Prenuptial Agreements for the UK
           </p>
 
-          <h1 className="rv display text-white text-[clamp(36px,5.5vw,72px)] mb-5 max-w-[620px] leading-[1.08]">
+          <h1 className="rv display text-white text-[clamp(36px,5vw,68px)] mb-6 max-w-[620px] leading-[1.15] pt-1">
             Your marriage deserves a{" "}
             <span className="display-italic text-rose-glow">clear start</span>
           </h1>
 
-          <p className="rv text-mist text-[16px] lg:text-[17px] font-light leading-[1.7] max-w-[460px] mb-8">
+          <p className="rv text-white text-[16px] lg:text-[17px] font-normal leading-[1.7] max-w-[460px] mb-8">
             Fixed £999 for both partners. Two independent law firms. Dedicated case manager. Completed in days.
           </p>
 
@@ -28,7 +28,7 @@ export default function Hero() {
               Begin Your Agreement
               <ArrowRight className="w-4 h-4" />
             </a>
-            <span className="text-mist/70 text-[13px]">Takes under 5 minutes</span>
+            <span className="text-white text-[13px] font-medium">Takes under 5 minutes</span>
           </div>
 
           {/* Social Proof Badges */}

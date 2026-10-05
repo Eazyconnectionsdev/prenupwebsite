@@ -13,7 +13,8 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      wheelMultiplier: 1,
+      wheelMultiplier: 0.95,
+      touchMultiplier: 1.8,
     });
 
     lenis.on("scroll", ScrollTrigger.update);
@@ -23,7 +24,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     };
 
     gsap.ticker.add(tickerCb);
-    gsap.ticker.lagSmoothing(0);
+    gsap.ticker.lagSmoothing(500, 33);
 
     // Hero stagger animations
     const heroEls = document.querySelectorAll(".hero-gradient .rv");
@@ -92,6 +93,33 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       });
     }
 
+    // Anchor link smooth scroll with exact top flush alignment
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a[href^="#"]');
+      if (!target) return;
+      const href = target.getAttribute("href");
+      if (!href || href === "#") return;
+      const el = document.querySelector<HTMLElement>(href);
+      if (el) {
+        e.preventDefault();
+        const topPos = el.getBoundingClientRect().top + window.scrollY;
+        const currentPos = window.scrollY;
+        const distance = Math.abs(topPos - currentPos);
+        
+        // Dynamically calculate comfortable duration based on distance (min 1.0s, max 1.8s)
+        const duration = Math.min(1.8, Math.max(1.0, 0.7 + distance / 3200));
+
+        lenis.scrollTo(topPos, {
+          duration,
+          easing: (t: number) =>
+            t < 0.5
+              ? 4 * t * t * t
+              : 1 - Math.pow(-2 * t + 2, 3) / 2, // Silky smooth easeInOutCubic
+        });
+      }
+    };
+    document.addEventListener("click", handleAnchorClick);
+
     const refreshScroll = () => {
       ScrollTrigger.refresh();
       lenis.resize();
@@ -104,6 +132,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
 
     return () => {
       clearTimeout(timer);
+      document.removeEventListener("click", handleAnchorClick);
       window.removeEventListener("resize", refreshScroll);
       window.removeEventListener("load", refreshScroll);
       gsap.ticker.remove(tickerCb);
